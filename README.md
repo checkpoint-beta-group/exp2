@@ -1,1 +1,2 @@
-# exp2
+# jpacman
+Experiment repo for Exp2
