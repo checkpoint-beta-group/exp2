@@ -49,5 +49,4 @@ public class ImageLoaderTest {
         Image m2 = imf.monster(0);
         assertEquals(m1, m2);
     }
-    
 }

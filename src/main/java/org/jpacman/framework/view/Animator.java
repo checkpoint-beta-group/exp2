@@ -38,12 +38,12 @@ public class Animator implements IController {
      * Create an animator for a particular board viewer.
      * @param bv The view to be animated.
      */
-    public Animator(BoardView bv) {
+    public Animator(final BoardView bv) {
         boardViewer = bv;
         timer = new Timer(DELAY,
                 new ActionListener() {
             @Override
-			public void actionPerformed(ActionEvent e) {
+			public void actionPerformed(final ActionEvent e) {
                 boardViewer.nextAnimation();
             }
         }
@@ -65,7 +65,7 @@ public class Animator implements IController {
 	public void start()  {
         timer.start();
     }
-    
+
     @Override
     public void doTick() { }
 }

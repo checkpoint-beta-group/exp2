@@ -38,3 +38,4 @@ public class RandomGhostMover extends AbstractGhostMover {
         }
     }
 }
+
