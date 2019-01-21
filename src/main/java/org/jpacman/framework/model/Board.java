@@ -29,12 +29,18 @@ public class Board implements IBoardInspector {
 			}
 		}
 	}
-	
+
+	/**
+	 * returns the height of the board
+	 */
 	@Override
 	public int getHeight() {
 		return height;
 	}
 
+	/**
+	 * returns the width of the board
+	 */
 	@Override
 	public int getWidth() {
 		return width;
@@ -59,15 +65,15 @@ public class Board implements IBoardInspector {
 	 * @param y y-coordinate
 	 * @return True iff (x,y) falls within the board.
 	 */
-	public boolean withinBorders(int x, int y) {
+	public boolean withinBorders(final int x, final int y) {
 		return
-			x >= 0 && x < width 
+			x >= 0 && x < width
 			&& y >= 0 && y < height;
 	}
 
 	@Override
 	public Sprite spriteAt(int x, int y) {
-		assert withinBorders(x, y) : "PRE: (x,y) on board.";		
+		assert withinBorders(x, y) : "PRE: (x,y) on board.";
 		return tileAt(x, y).topSprite();
 	}
 	
