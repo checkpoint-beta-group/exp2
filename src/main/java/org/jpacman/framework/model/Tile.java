@@ -18,12 +18,12 @@ public class Tile {
 	
 	/**
 	 * Create a new tile for the given location.
-	 * @param x horizontal coordinate
-	 * @param y vertical coordinate
+	 * @param newX horizontal coordinate
+	 * @param newY vertical coordinate
 	 */
-	public Tile(int x, int y) {
-		this.x = x;
-		this.y = y;
+	public Tile(int newX, int newY) {
+		this.x = newX;
+		this.y = newY;
 		sprites = new ArrayDeque<Sprite>();
 	}
 	

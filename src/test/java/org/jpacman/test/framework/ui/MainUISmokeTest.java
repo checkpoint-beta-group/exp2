@@ -15,6 +15,8 @@ import org.junit.Test;
  */
 public class MainUISmokeTest {
 	
+	private static final int WAITING_TIME = 10;
+
 	@Test
 	public void testUIActions() throws FactoryException, InterruptedException {
 		MainUI ui = new MainUI();
@@ -28,7 +30,7 @@ public class MainUISmokeTest {
 		eventHandler.left();
 
 		// give the monsters some time to move.
-		Thread.sleep(10 * AbstractGhostMover.DELAY);
+		Thread.sleep(WAITING_TIME * AbstractGhostMover.DELAY);
 
 		// and attempt some moves again.
 		eventHandler.down();
